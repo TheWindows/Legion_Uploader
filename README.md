@@ -127,5 +127,5 @@ This is **BETA software** and is under active development.
 #### Step 1: Download and Extract
 ```bash
 # Clone or download the repository
-git clone https://github.com/yourusername/legion-uploader.git
+git clone https://github.com/TheWindows/legion-uploader.git
 # OR download ZIP and extract to server directory
