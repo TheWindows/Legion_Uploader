@@ -21,6 +21,7 @@
 - [✨ Features](#-features)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Quick Start](#-quick-start)
+- [⚠️ Database Import Alert](#️-database-import-alert)
 - [⚙️ Configuration](#️-configuration)
 - [📁 Project Structure](#-project-structure)
 - [🔧 TODO & Development](#-todo--development)
@@ -121,3 +122,11 @@ This is **BETA software** and is under active development.
    - MySQL 5.7 or higher
    - Apache 2.4 or higher
    - 100MB free disk space
+
+### Installation Steps
+
+#### Step 1: Download and Extract
+```bash
+# Clone or download the repository
+git clone https://github.com/yourusername/legion-uploader.git
+# OR download ZIP and extract to server directory
