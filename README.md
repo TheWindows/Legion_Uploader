@@ -2,14 +2,6 @@
 
 <div align="center">
 
-![Beta Version](https://img.shields.io/badge/Version-Beta-orange?style=for-the-badge&logo=beta)
-![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
 **A modern, secure file uploader with glassmorphism UI and admin panel**
 
 ⚠️ **BETA SOFTWARE** - Use with caution! May contain bugs and incomplete features.
@@ -21,8 +13,8 @@
 - [✨ Features](#-features)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Quick Start](#-quick-start)
+- [⚙️ Server Configuration](#️-server-configuration)
 - [⚠️ Database Import Alert](#️-database-import-alert)
-- [⚙️ Configuration](#️-configuration)
 - [📁 Project Structure](#-project-structure)
 - [🔧 TODO & Development](#-todo--development)
 - [🛡️ Security](#️-security)
@@ -35,98 +27,124 @@
 
 <div align="center">
   
-**🚨 IMPORTANT - READ BEFORE USING 🚨**
+**🚨 HEADS UP - THIS IS BETA SOFTWARE 🚨**
 
 </div>
 
-This is **BETA software** and is under active development. 
+Alright, let's be real here - this isn't finished yet. Legion Uploader is still in the oven, and while it's got some cool features, it might have a few rough edges.
 
-### What this means:
-- 🔴 **Features may break** unexpectedly
-- 🔴 **Bugs are expected** and may cause data loss
-- 🔴 **Security vulnerabilities** may exist
-- 🔴 **APIs may change** without warning
-- 🔴 **Not production-ready**
+### What you're getting into:
+- 🐛 **Stuff might break** - and not in a cool "I can fix it" way
+- 📧 **Email system is wonky** - sometimes it sends, sometimes it doesn't
+- 🔧 **Features are half-baked** - some things look done but aren't
+- ⚡ **Unexpected surprises** - the fun kind (errors) and the not-so-fun kind
 
-### Recommendations:
-- ✅ **Test thoroughly** before any real use
-- ✅ **Backup regularly** - especially your database
-- ✅ **Use in isolated environments** only
-- ✅ **Report all issues** you encounter
-- ✅ **Expect instability** during use
+### How to not get frustrated:
+- 👍 **Test it like you're trying to break it** - because you probably will
+- 💾 **Backup everything** - your database, your files, your sanity
+- 🧪 **Use it in a safe space** - not on your production server
+- 📝 **Tell us when it breaks** - we can't fix what we don't know about
+- 😅 **Bring patience** - this is a work in progress
 
 ---
 
 ## ✨ Features
 
-### 🎨 Modern UI
-- **Glassy Glassmorphism** design with frosted glass effects
-- **Responsive layout** that works on desktop and mobile
-- **Smooth animations** and transitions
-- **Dark/Light mode** support
-- **Clean, intuitive interface**
+### 🎨 Looks That Don't Suck
+- **Frosty glass effects** that make it look modern
+- **Works on your phone** and your computer
+- **Smooth animations** - no janky transitions
+- **Dark mode** for late-night uploading sessions
+- **Clean layout** - you won't get lost (probably)
 
-### 🔐 Security
-- **Hashed passwords** using `password_hash()` with bcrypt
-- **SQL Injection protection** via prepared statements
-- **XSS prevention** with output encoding
-- **Session security** with regeneration
-- **File validation** (MIME types, extensions, size)
+### 🔒 Actually Secure Stuff
+- **Passwords are hashed** - not stored in plain text (thank goodness)
+- **SQL injection protection** - because hackers are no fun
+- **XSS prevention** - keeps the bad scripts out
+- **Session security** - your login stays yours
+- **File validation** - no uploading viruses, please
 
-### 👨‍💼 Admin Panel
-- **User management** (add/edit/delete users)
-- **File management** system
-- **Upload statistics** and analytics
-- **System configuration** interface
-- **Activity logs** and monitoring
+### 👨‍💼 Admin Superpowers
+- **Manage users** - add, edit, or remove people
+- **File oversight** - see what everyone's uploading
+- **Upload stats** - charts and graphs for data nerds
+- **System settings** - tweak how things work
+- **Activity logs** - see who did what and when
 
-### 📁 Upload System
-- **Multiple file uploads** support
-- **Upload limitations** (size, type, quantity)
-- **Progress indicators** with real-time feedback
-- **File organization** by user/date/category
-- **Preview capabilities** for images and documents
+### 📁 Uploading That Works (Mostly)
+- **Upload multiple files** - because one at a time is boring
+- **Smart limitations** - keeps people from uploading their entire movie collection
+- **Progress bars** - watch the little bar fill up
+- **Organized files** - sorted by user, date, and type
+- **File previews** - see images and documents before downloading
 
-### 🗄️ Database
-- **MySQL integration** with PDO
-- **Efficient schema** design
-- **Backup and restore** functionality
-- **Query optimization** for performance
+### 🗄️ Database That Holds Your Stuff
+- **MySQL powered** - reliable data storage
+- **Smart structure** - organized and efficient
+- **Backup ready** - export your data easily
+- **Fast queries** - snappy performance
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| **PHP** | 8.0+ | Backend logic and server-side processing |
-| **MySQL** | 5.7+ | Database storage and management |
-| **JavaScript** | ES6+ | Frontend interactivity and AJAX |
-| **HTML5** | Latest | Markup and structure |
-| **CSS3** | Latest | Styling with glassmorphism effects |
-| **Apache** | 2.4+ | Web server (via WAMP/XAMPP) |
+| Technology | What It Does |
+|------------|-------------|
+| **PHP** | The brain - handles all the logic and processing |
+| **MySQL** | The memory - stores all your data and files info |
+| **JavaScript** | The personality - makes things interactive and fun |
+| **HTML5** | The skeleton - structures everything on the page |
+| **CSS3** | The wardrobe - makes it all look pretty |
+| **Apache** | The doorman - serves everything to your browser |
 
 ---
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### What You Need First
 
-1. **Install one of these:**
-   - [WAMP Server](https://www.wampserver.com/en/) (Windows)
-   - [XAMPP](https://www.apachefriends.org/) (Cross-platform)
-   - [Laragon](https://laragon.org/) (Windows)
+1. **Pick Your Server Software:**
+   - [WAMP Server](https://www.wampserver.com/en/) (Windows folks)
+   - [XAMPP](https://www.apachefriends.org/) (Works everywhere)
+   - [Laragon](https://laragon.org/) (Windows, but fancy)
 
-2. **System Requirements:**
-   - PHP 8.0 or higher
-   - MySQL 5.7 or higher
-   - Apache 2.4 or higher
-   - 100MB free disk space
+2. **Your Computer Needs:**
+   - PHP 8.0 or newer
+   - MySQL 5.7 or newer
+   - Apache 2.4 or newer
+   - About 100MB of free space
 
-### Installation Steps
+---
 
-#### Step 1: Download and Extract
-```bash
-# Clone or download the repository
-git clone https://github.com/yourusername/legion-uploader.git
-# OR download ZIP and extract to server directory
+## ⚙️ Server Configuration
+
+<div align="center" style="background-color: #e7f3ff; border: 2px solid #4da6ff; border-radius: 10px; padding: 20px; margin: 20px 0;">
+
+### ⚡ **TUNE UP YOUR PHP FOR BIG FILES** ⚡
+
+**You need to adjust these settings or big files won't upload!**
+
+</div>
+
+### The .htaccess File
+Don't worry about this one too much - it's already included in the project. It does these important things:
+- **Allows big file uploads** (up to 1GB files!)
+- **Gives PHP more time** to process large uploads
+- **Adds security headers** to protect against attacks
+- **Hides sensitive files** from prying eyes
+- **Sets up clean URLs** (no ugly `index.php?page=home`)
+
+### Manual PHP.ini Tweaks (If You Need Them)
+
+Sometimes the .htaccess file doesn't work perfectly. If you're having trouble with big files:
+
+#### For XAMPP Users:
+1. Find `php.ini` in: `C:\xampp\php\php.ini`
+2. Open it with Notepad (or any text editor)
+3. Find and change these lines:
+   ```ini
+   upload_max_filesize = 1024M
+   post_max_size = 1024M
+   max_execution_time = 300
+   max_input_time = 300
+   memory_limit = 256M
